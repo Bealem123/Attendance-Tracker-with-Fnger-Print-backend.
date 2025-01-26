@@ -1,3 +1,4 @@
+// backend/app.js
 const express = require("express");
 const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
@@ -12,9 +13,8 @@ const app = express();
 const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
-      "http://localhost:3000", // Local frontend URL
-     
-      //  // Deployed Netlify frontend URL
+      "http://localhost:3000", // Local frontend URL for development
+      "https://melodious-sunshine-207a7a.netlify.app/", // Deployed Netlify frontend URL (production)
     ];
 
     // Allow requests without an Origin header (e.g., Postman) or from allowed origins
@@ -57,6 +57,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 // const express = require("express");
 // const cors = require("cors");
 // const authRoutes = require("./routes/authRoutes");
