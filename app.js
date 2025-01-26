@@ -14,8 +14,8 @@ const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
       "http://localhost:3000", // Local frontend URL for development
-      "https://melodious-sunshine-207a7a.netlify.app/", // Deployed Netlify frontend URL (production)
-       "https://ubiquitous-empanada-8d0b8b.netlify.app/",
+      "https://melodious-sunshine-207a7a.netlify.app", // Deployed Netlify frontend URL (production)
+       "https://ubiquitous-empanada-8d0b8b.netlify.app",
     ];
 
     // Allow requests without an Origin header (e.g., Postman) or from allowed origins
