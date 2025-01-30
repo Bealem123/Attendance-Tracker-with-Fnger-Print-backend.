@@ -17,6 +17,8 @@ const corsOptions = {
       "https://melodious-sunshine-207a7a.netlify.app", // Deployed Netlify frontend URL (production)
        "https://ubiquitous-empanada-8d0b8b.netlify.app",
        "https://darling-bombolone-f98b58.netlify.app",
+       " http://fingerprint-attendance.bealem.tech",
+     
       
     ];
 
