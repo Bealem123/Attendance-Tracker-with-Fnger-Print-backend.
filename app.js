@@ -14,8 +14,8 @@ const corsOptions = {
   origin: (origin, callback) => {
     const allowedOrigins = [
       "http://localhost:3000", // Local frontend URL for development
-      "https://darling-bombolone-f98b58.netlify.app",
-       "https://fingerprint-attendance.bealem.tech",
+       "https://attendance-fingerprint.bealem.tech",
+       "http://attendance-fingerprint.bealem.tech",
     ];
 
     // Allow requests without an Origin header (e.g., Postman) or from allowed origins
